@@ -1,0 +1,342 @@
+
+<!doctype html>
+<html lang="utf-8">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Dashboard - Nexus</title>
+
+	<!-- Bootstrap CSS-->
+	<link rel="stylesheet" href="assets/modules/bootstrap-5.1.3/css/bootstrap.css">
+	<!-- Style CSS (White)-->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- FontAwesome CSS-->
+	<link rel="stylesheet" href="assets/modules/fontawesome6.1.1/css/all.css">
+	<!-- Boxicons CSS-->
+	<link rel="stylesheet" href="assets/modules/boxicons/css/boxicons.min.css">
+    <!-- Boostrap Icon -->
+    <link rel="stylesheet" href="assets/modules/bootstrap-icons/bootstrap-icons.css">
+</head>
+<body>
+  
+   <!--Topbar -->
+  <div class="topbar transition">
+	<div class="bars">
+		<button type="button" class="btn transition" id="sidebar-toggle">
+			<i class="fa fa-bars"></i>
+		</button>
+	</div>
+		<div class="menu">
+			<ul>
+				<li class="nav-item dropdown dropdown-list-toggle">
+					<a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					   <i class="fa fa-bell size-icon-1"></i><span class="badge bg-danger notif">4</span>
+					</a> 				 
+					<div class="dropdown-menu dropdown-list">
+						<div class="dropdown-header">Notificações</div>
+						<div class="dropdown-list-content dropdown-list-icons">
+							<div class="custome-list-notif"> 
+							<a href="#" class="dropdown-item dropdown-item-unread">
+								<div class="dropdown-item-icon bg-primary text-white">
+								  <i class="fas fa-code"></i>
+								</div>
+								<div class="dropdown-item-desc">
+									Seja bem vindo ao NEXUS!
+								  <div class="time text-primary">3 min Atrás</div>
+								</div>
+							  </a>
+
+							  <a href="#" class="dropdown-item">
+								<div class="dropdown-item-icon bg-info text-white">
+								  <i class="far fa-user"></i>
+								</div>
+								<div class="dropdown-item-desc">
+								   Complete seus dados!
+								  <div class="time">12 min atrás</div>
+								</div>
+							  </a>
+
+							  <a href="#" class="dropdown-item">
+								<div class="dropdown-item-icon bg-danger text-white">
+								  <i class="fas fa-check"></i>
+								</div>
+								<div class="dropdown-item-desc">
+									Cadastro realizado com sucesso!
+								  <div class="time">20 min atrás</div>
+								</div>
+							  </a>
+
+						  
+							  <a href="#" class="dropdown-item">
+								<div class="dropdown-item-icon bg-info text-white">
+								  <i class="fas fa-bell"></i>
+								</div>
+								<div class="dropdown-item-desc">
+								    Bem vindo ao NEXUS, Para contato ou suporte visite nossa pagina de ajuda!
+								  <div class="time">Ontem</div>
+								</div>
+							  </a>
+ 
+							</div>
+						</div>
+
+						<div class="dropdown-footer text-center">
+						  <a href="#">Ver Todos</a>
+						</div>
+
+					  
+				  </li>
+			 
+				  <li class="nav-item dropdown">
+					<a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  <img src="assets/images/avatar/avatar-1.png" alt="">
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="my-profile.html"><i class="fa fa-user size-icon-1"></i> <span>My Profile</span></a>
+						<a class="dropdown-item" href="settings.html"><i class="fa fa-cog size-icon-1"></i> <span>Settings</span></a>
+						<hr class="dropdown-divider">
+						<a class="dropdown-item" href="#"><i class="fa fa-sign-out-alt  size-icon-1"></i> <span>My Profile</span></a>
+					</ul>
+				  </li>
+			</ul>
+		</div>
+	</div>
+
+	<!--Sidebar-->
+	<div class="sidebar transition overlay-scrollbars animate__animated  animate__slideInLeft">
+        <div class="sidebar-content"> 
+        	<div id="sidebar">
+			
+			<!-- Logo -->
+			<div class="logo">
+					<h2 class="mb-0"><img src="assets/images/logo.png"> NEXUS</h2>
+			</div>
+
+            <ul class="side-menu">
+                <li>
+					<a href="index.html" class="active">
+						<i class='bx bxs-dashboard icon' ></i> Dashboard
+					</a>
+				</li>
+
+				<!-- Divider-->
+                <li class="divider" data-text="STARTER">Loja</li>
+
+                <li>
+                    <a href="#">
+						<i class='bx bx-columns icon' ></i> 
+						Loja 
+						<i class='bx bx-chevron-right icon-right' ></i>
+					</a>
+                    <ul class="side-dropdown">
+                        <li><a href="layout-top-navigation.html">Vendedores</a></li>
+                        <li><a href="layout-top-navigation.html">Leads</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">
+						<i class='fa fa-th icon' ></i> 
+						Suporte 
+						<i class='bx bx-chevron-right icon-right' ></i>
+					</a>
+                    <ul class="side-dropdown">
+						<li><a href="bootstrap-alert.html">Alertas</a></li>
+						<li><a href="component-toastify.html">Contatos</a></li>
+						<li><a href="bootstrap-breadcrumb.html">Tiket</a></li>
+						<li><a href="bootstrap-buttons.html">#</a></li>
+						</ul>
+                </li>
+
+				<!-- Divider-->
+                <li class="divider" data-text="Nexus">Leads</li>
+
+				<li>
+                    <a href="#">
+						<i class='bx bx-columns icon' ></i> 
+						Contatos 
+						<i class='bx bx-chevron-right icon-right' ></i>
+					</a>
+                    <ul class="side-dropdown">
+                        <li><a href="component-toastify.html">vendidos</a></li>
+						<li><a href="component-toastify.html">Em atendimento</a></li>
+                        <li><a href="component-toastify.html">Remark</a></li>
+                        <li><a href="component-toastify.html">Sem interesse</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">
+						<i class='bx bxs-notepad icon' ></i> 
+						Vendedores 
+						<i class='bx bx-chevron-right icon-right' ></i>
+					</a>
+                    <ul class="side-dropdown">
+                        <li><a href="layout-top-navigation.html">Nome 1</a></li>
+                        <li><a href="layout-top-navigation.html">Nome 2</a></li>
+                        <li><a href="layout-top-navigation.html">Nome 3</a></li>
+                        <li><a href="layout-top-navigation.html">Nome 4</a></li>
+                    </ul>
+                </li>
+
+				<li>
+                    <a href="#">
+						<i class='bx bxs-widget icon' ></i> 
+						Tabelas 
+						<i class='bx bx-chevron-right icon-right' ></i>
+					</a>
+                    <ul class="side-dropdown">
+                        <li><a href="widgets-chatboxs.html">Veiculos</a></li>
+                        <li><a href="widgets-email.html">Imoveis</a></li>
+                        <li><a href="#">Carta alta</a></li>
+                    </ul>
+                </li>
+
+				<li>
+                    <a href="#">
+						<i class='bx bxs-bar-chart-alt-2 icon' ></i> 
+						Graficos 
+						<i class='bx bx-chevron-right icon-right' ></i>
+					</a>
+                    <ul class="side-dropdown">
+                        <li><a href="chart-chartjs.html">Loja</a></li>
+                        <li><a href="chart-apexcharts.html">Geral</a></li>
+                    </ul>
+                </li>
+
+				<li>
+                    <a href="#">
+						<i class='bx bxs-cloud-rain icon' ></i> 
+						Documentos 
+						<i class='bx bx-chevron-right icon-right' ></i>
+					</a>
+                    <ul class="side-dropdown">
+                        <li><a href="#">Contrato Veiculo</a></li>
+                        <li><a href="#">Contrato Imovel</a></li>
+                    </ul>
+                </li>
+
+				<!-- Divider-->
+				<li class="divider" data-text="Pages">Usuários</li>
+
+				<li>
+                    <a href="#">
+						<i class='bx bxs-user icon' ></i> 
+						Criar Acessos 
+						<i class='bx bx-chevron-right icon-right' ></i>
+					</a>
+                    <ul class="side-dropdown">
+                        <li><a href="#">Gerente</a></li>
+                        <li><a href="component-hero.html">Supervisor</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="component-hero.html">Vendedor</a></li>
+                    </ul>
+                </li>
+
+				<li>
+                    <a href="#">
+						<i class='bx bxs-error icon' ></i> 
+						Suporte de Erros 
+						<i class='bx bx-chevron-right icon-right' ></i>
+					</a>
+                    <ul class="side-dropdown">
+                        <li><a href="errors-403.html">403</a></li>
+                        <li><a href="errors-404.html">404</a></li>
+                        <li><a href="errors-500.html">500</a></li>
+                        <li><a href="errors-503.html">503</a></li>
+                    </ul>
+                </li>
+
+
+				<li>
+					<a href="credits.html"><i class='fa fa-pencil-ruler icon' ></i> 
+						Sair
+					</a>
+				</li>
+
+            </ul>
+
+            <div class="ads">
+				<div class="wrapper">
+					<div class="help-icon"><i class="fa fa-circle-question fa-3x"></i></div>
+					<p>Precisa de <strong>Ajuda</strong>?</p>
+                    <a href="docs/" class="btn-upgrade">Chat Nexus</a>
+                 </div>
+            </div>
+        </div>
+
+       </div> 
+	 </div>
+	</div><!-- End Sidebar-->
+
+
+	<div class="sidebar-overlay"></div>
+
+
+	<!--Content Start-->
+	<div class="content-start transition "> 
+		<div class="container-fluid dashboard">
+			<div class="content-header">
+				<h1>Carros</h1>
+				<p>Em breve mais informações</p>
+			</div>
+            
+                <div class="row"> 
+					<div class="card">
+						<div class="card-body">
+							 <h1>Aguarde...</h1>
+						</div>
+					</div>
+				</div>
+		 
+            </div><!-- End Container-->
+        </div><!-- End Content-->
+
+	<!-- Footer -->				
+	<footer>
+		<div class="footer">
+			<div class="float-start">
+				<p>2024 &copy; Nexus</p>
+			</div>
+				<div class="float-end">
+					<p>Crafted with 
+						<span class="text-danger">
+							<i class="fa fa-heart"></i> by 
+							<a href="https://www.instagram.com/knigimarco/" class="author-footer">KnigiGroup</a>
+						</span> 
+					</p>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Preloader -->
+	<div class="loader">
+		<div class="spinner-border text-light" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+	
+	<!-- Loader -->
+	<div class="loader-overlay"></div>
+
+	<!-- General JS Scripts -->
+	<script src="assets/js/Nexus.js"></script>
+
+	<!-- JS Libraies -->
+	<script src="assets/modules/jquery/jquery.min.js"></script>
+	<script src="assets/modules/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/modules/popper/popper.min.js"></script>
+
+	<!-- Chart Js -->
+	<script src="assets/modules/apexcharts/apexcharts.js"></script>
+	<script src="assets/js/ui-apexcharts.js"></script>
+
+    <!-- Template JS File -->
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/custom.js"></script>
+ </body>
+</html>
