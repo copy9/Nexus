@@ -529,6 +529,32 @@ a.dropdown-item{
 	background-color: #ffffff;
 	border-bottom: 1px solid #E5E7EB;
 }
+
+iframe {
+	width: 100%;        /* O iframe ocupará 100% da largura disponível */
+	height: 100vh;      /* Altura ajustada à tela */
+	border: none;       /* Remove a borda para um visual limpo */
+	overflow-x: hidden; /* Remove a rolagem lateral */
+  }
+  
+  
+
+
+
+/* Classe específica para ajustar o tamanho e o estilo do ícone */
+.icone-ajustado {
+	width: 30px; /* Define a largura do ícone */
+	height: 30px; /* Define a altura do ícone */
+	margin: 10px auto; /* Centraliza o ícone e adiciona espaçamento */
+	object-fit: contain; /* Ajusta o ícone para caber no tamanho sem distorção */
+  }
+  
+  /* Adiciona um efeito de transição ao passar o mouse */
+  .icone-ajustado:hover {
+	transform: scale(1.1); /* Aumenta ligeiramente o ícone ao passar o mouse */
+	transition: transform 0.3s ease; /* Suaviza a transição */
+  }
+  
 .card.card-statistic {
 	box-shadow: 1px 2px 5px rgba(47, 170, 244, 0.5);
 	background: linear-gradient(to bottom, #25a6f1, #54b9ff);
